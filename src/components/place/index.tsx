@@ -27,7 +27,8 @@ export function Place({ data, ...rest }: Props) {
   return (
     <TouchableOpacity
       style={s.container}
-      onPress={() => router.navigate(`/market/${data.id}`)}
+      {...rest}
+      // onPress={() => router.navigate(`/market/${data.id}`)}
     >
       <Image style={s.image} source={{ uri: data.cover }} />
 
